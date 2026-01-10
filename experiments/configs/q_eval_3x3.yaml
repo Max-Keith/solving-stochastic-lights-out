@@ -1,0 +1,24 @@
+experiment:
+  board:
+    n: 3
+
+  kernels: ["exp"]
+
+  noise:
+    alpha: [0.05, 0.1, 0.2, 0.4, 0.6, 0.8]
+    lambda: [0.0001, 0.5, 1.0, 2.0, 5.0]
+
+  budget_T: 500
+
+  initial_states:
+    n_samples: 10000
+    seed: 42
+
+  strategies:
+    - name: greedy
+    - name: q_learning_3x3
+      params:
+        q_dir: "results/q_tables"
+        epsilon: 0.0
+
+  output_dir: "results/q_learning_3x3"

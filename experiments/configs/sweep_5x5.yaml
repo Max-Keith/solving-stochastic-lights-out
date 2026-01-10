@@ -1,0 +1,37 @@
+experiment:
+  board:
+    n: 5
+  kernels: ["exp"]
+  noise:
+    alpha: [0.05, 0.1, 0.2, 0.4, 0.6, 0.8]
+    lambda: [0.0001, 0.5, 1.0, 2.0, 5.0]
+  budget_T: 500
+  strategies:
+    # - name: "random_click"
+    # - name: "linear_algebra_minweight"
+    # - name: "chasing_lights"
+    - name: "greedy"
+      params:
+        tie_break: "first"
+    - name: "risk_averse_greedy"
+      params:
+        tie_break: "first"
+        beta: 1.0
+    - name: "two_step_greedy"
+      params:
+        tie_break: "first"
+    - name: "prob_greedy"
+      params:
+        tie_break: "first"
+        max_on: 3
+    - name: "linear_algebra_replanning"
+      params:
+        tie_break: "first"
+    - name: "standard_rollout"
+      params:
+        depth: 2
+  initial_states:
+    n_samples: 1000
+    seed: 42
+  repeats: 1
+  output_dir: "results/runs"

@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "solving-stochastic-lights-out"
+version = "1.0.0"
+description = "Code and experiments for the bachelor thesis: Solving Stochastic Lights Out: A Comparison of Greedy and Planning Strategies."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [
+    {name="Max Steinke", email="max.steinke@ru.nl"}
+]
+
+dependencies = [
+  "ipykernel",
+  "ipywidgets",
+  "lifelines",
+  "matplotlib",
+  "numpy",
+  "pandas",
+  "pyyaml",
+  "seaborn",
+  "scipy",
+  "statsmodels",
+  "tqdm",
+]
+
+[project.urls]
+Repository = "https://github.com/Max-Keith/solving-stochastic-lights-out"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["lightsout*"]
