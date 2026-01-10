@@ -7,8 +7,6 @@ Max Steinke
 
 This repo contains the core implementation, experiment configs, scripts, result files, and analysis notebooks used to compare greedy and planning-based strategies in **stochastic** Lights Out.
 
----
-
 ## Repository structure
 
 - `src/lightsout/` — main Python package (board/algebra, stochastic simulator, strategies, evaluation)
@@ -18,8 +16,6 @@ This repo contains the core implementation, experiment configs, scripts, result 
 - `results/runs/` — CSV outputs (including `results/runs/final/` used for thesis figures)
 - `results/plots/` — final plots used in the thesis
 - `results/q_tables/` — trained Q-tables (`.npy`) for 3x3 experiments
-
----
 
 ## Quick start
 
