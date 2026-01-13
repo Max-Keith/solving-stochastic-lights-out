@@ -56,7 +56,7 @@ The notebook `notebooks/04_q_learning_analysis.ipynb` analyzes the trained table
 
 The analysis notebooks are in `notebooks/`:
 
-- `01_stochastic_check.ipynb`: analysis of stochastic behavior
+- `01_stochastic_visualization.ipynb`: analysis of stochastic behavior
 - `02_prelim_test_analysis.ipynb`: preliminary test analysis and plots
 - `03_statistical_analysis.ipynb`: statistical tests and final plots
 - `04_q_learning_analysis.ipynb`: Q-learning results and comparisons
